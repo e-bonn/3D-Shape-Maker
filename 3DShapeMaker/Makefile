@@ -1897,7 +1897,10 @@ Window.o: Window.cpp /usr/include/qt5/QtWidgets/QtWidgets \
 		/usr/include/qt5/QtOpenGL/qgl.h \
 		/usr/include/qt5/QtOpenGL/qglcolormap.h \
 		/usr/include/qt5/QtOpenGL/qtopenglglobal.h \
-		GLShapeInterface.h
+		GLShapeInterface.h \
+		PyramidGLShape.h \
+		CubicGLShape.h \
+		SphericalGLShape.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Window.o Window.cpp
 
 GLWidget.o: GLWidget.cpp /usr/include/qt5/QtWidgets/QtWidgets \
