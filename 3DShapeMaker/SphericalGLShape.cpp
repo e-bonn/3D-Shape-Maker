@@ -15,8 +15,6 @@ SphericalGLShape::~SphericalGLShape()
 
 void SphericalGLShape::draw()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear window.
-    glColor3f(1.0, 1.0, 1.0);
     glShadeModel(GL_SMOOTH);
     int i, j;
     int lats = 30;

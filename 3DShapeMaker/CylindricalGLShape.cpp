@@ -15,16 +15,16 @@ CylindricalGLShape::~CylindricalGLShape()
 
 void CylindricalGLShape::draw()
 {
-    drawCylinder(10, 20, 1.0, 0.4);
-}
+    int numMajor = 10;
+    int numMinor = 20;
+    float height = 2.0;
+    float radius = 0.7;
 
-void CylindricalGLShape::drawCylinder(int numMajor, int numMinor, float height, float radius)
-{
     double majorStep = height / numMajor;
     double minorStep = 2.0 * M_PI / numMinor;
     int i, j;
 
-    drawCircle(radius,0.5);
+    drawCircle(radius,height/2);
 
     for (i = 0; i < numMajor; ++i) {
         GLfloat z0 = 0.5 * height - i * majorStep;
@@ -45,7 +45,7 @@ void CylindricalGLShape::drawCylinder(int numMajor, int numMinor, float height, 
         }
         glEnd();
     }
-    drawCircle(radius,-0.5);
+    drawCircle(radius,-height/2);
 }
 
 void CylindricalGLShape::drawCircle(float radius, float zCoord)

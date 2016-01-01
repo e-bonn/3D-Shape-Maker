@@ -9,7 +9,6 @@ public:
 	CylindricalGLShape();
 	~CylindricalGLShape();
 
-	void drawCylinder(int numMajor, int numMinor, float height, float radius);
 	void drawCircle(float radius, float zCoord);
 
 	virtual void draw();
