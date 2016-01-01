@@ -32,6 +32,7 @@ public:
     QRadioButton *radioButtonCube;
     QRadioButton *radioButtonPyramid;
     QRadioButton *radioButtonSphere;
+    QRadioButton *radioButtonCylinder;
 
     void setupUi(QWidget *Window)
     {
@@ -47,7 +48,7 @@ public:
         myGLWidget->setMinimumSize(QSize(200, 250));
         groupBoxShape = new QGroupBox(myGLWidget);
         groupBoxShape->setObjectName(QStringLiteral("groupBoxShape"));
-        groupBoxShape->setGeometry(QRect(0, 0, 150, 106));
+        groupBoxShape->setGeometry(QRect(0, 0, 150, 150));
         verticalLayout_2 = new QVBoxLayout(groupBoxShape);
         verticalLayout_2->setSpacing(0);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -69,7 +70,11 @@ public:
 
         verticalLayout_2->addWidget(radioButtonSphere);
 
-        groupBoxShape->raise();
+        radioButtonCylinder = new QRadioButton(groupBoxShape);
+        radioButtonCylinder->setObjectName(QStringLiteral("radioButtonCylinder"));
+
+        verticalLayout_2->addWidget(radioButtonCylinder);
+
 
         verticalLayout->addWidget(myGLWidget);
 
@@ -86,6 +91,7 @@ public:
         radioButtonCube->setText(QApplication::translate("Window", "Cube", 0));
         radioButtonPyramid->setText(QApplication::translate("Window", "Pyramid", 0));
         radioButtonSphere->setText(QApplication::translate("Window", "Sphere", 0));
+        radioButtonCylinder->setText(QApplication::translate("Window", "Cylinder", 0));
     } // retranslateUi
 
 };

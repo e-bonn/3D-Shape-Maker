@@ -28,7 +28,7 @@
         <x>0</x>
         <y>0</y>
         <width>150</width>
-        <height>106</height>
+        <height>150</height>
        </rect>
       </property>
       <property name="title">
@@ -71,11 +71,15 @@
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonCylinder">
+         <property name="text">
+          <string>Cylinder</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
-     <zorder>groupBox</zorder>
-     <zorder>groupBox</zorder>
-     <zorder>groupBoxShape</zorder>
     </widget>
    </item>
   </layout>

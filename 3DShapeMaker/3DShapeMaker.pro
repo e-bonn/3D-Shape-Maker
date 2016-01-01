@@ -12,13 +12,15 @@ SOURCES += main.cpp\
     GLShapeInterface.cpp \
     PyramidGLShape.cpp \
     CubicGLShape.cpp \
-    SphericalGLShape.cpp
+    SphericalGLShape.cpp \
+    CylindricalGLShape.cpp
 
 HEADERS  += Window.h \
     GLWidget.h \
     GLShapeInterface.h \
     PyramidGLShape.h \
     CubicGLShape.h \
-    SphericalGLShape.h
+    SphericalGLShape.h \
+    CylindricalGLShape.h
 
 FORMS    += Window.ui

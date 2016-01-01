@@ -9,6 +9,7 @@
 #include "PyramidGLShape.h"
 #include "CubicGLShape.h"
 #include "SphericalGLShape.h"
+#include "CylindricalGLShape.h"
 
 Window::Window(QWidget *parent) :
     QWidget(parent),
@@ -20,6 +21,7 @@ Window::Window(QWidget *parent) :
     connect(m_ui->radioButtonCube,SIGNAL(toggled(bool)),this,SLOT(radioButtonChanged()));
     connect(m_ui->radioButtonPyramid,SIGNAL(toggled(bool)),this,SLOT(radioButtonChanged()));
     connect(m_ui->radioButtonSphere,SIGNAL(toggled(bool)),this,SLOT(radioButtonChanged()));
+    connect(m_ui->radioButtonCylinder,SIGNAL(toggled(bool)),this,SLOT(radioButtonChanged()));
 }
 
 Window::~Window()
@@ -48,5 +50,9 @@ void Window::radioButtonChanged()
     else if (m_ui->radioButtonSphere->isChecked())
     {
         m_ui->myGLWidget->setShape(new SphericalGLShape());
+    }
+    else if (m_ui->radioButtonCylinder->isChecked())
+    {
+        m_ui->myGLWidget->setShape(new CylindricalGLShape());
     }
 }

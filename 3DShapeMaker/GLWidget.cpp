@@ -4,9 +4,7 @@
 #include <QtOpenGL>
 
 #include "GLWidget.h"
-#include "PyramidGLShape.h"
 #include "CubicGLShape.h"
-#include "SphericalGLShape.h"
 
 GLWidget::GLWidget(QWidget *parent)
     : QGLWidget(QGLFormat(QGL::SampleBuffers), parent)
