@@ -1887,13 +1887,6 @@ Window.o: Window.cpp /usr/include/qt5/QtWidgets/QtWidgets \
 		/usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QSlider \
 		ui_Window.h \
-		/usr/include/qt5/QtWidgets/QAction \
-		/usr/include/qt5/QtWidgets/QApplication \
-		/usr/include/qt5/QtWidgets/QButtonGroup \
-		/usr/include/qt5/QtWidgets/QGroupBox \
-		/usr/include/qt5/QtWidgets/QHeaderView \
-		/usr/include/qt5/QtWidgets/QRadioButton \
-		/usr/include/qt5/QtWidgets/QVBoxLayout \
 		GLWidget.h \
 		/usr/include/qt5/QtOpenGL/QGLWidget \
 		/usr/include/qt5/QtOpenGL/qgl.h \
